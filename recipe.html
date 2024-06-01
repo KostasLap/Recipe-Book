@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div id="all">
+        <h1>Recipe Book Application</h1>
+        <div id="addContainer">
+            
+            <form id="AddRecipe">
+                <label>Title:</label><br>
+                <input type="text" id="title" placeholder="Pasta" required maxlength="20"><br>
+                <label>Category:</label><br>
+                <input type="text" id="category" placeholder="Snack" maxlength="20"><br>
+                <label>Ingredients:</label><br>
+                <textarea id="ingredients" rows="1" placeholder="Sauce, oil, cheese" required maxlength="100"></textarea><br>
+                <label>Instructions:</label><br>
+                <textarea id="instructions" rows="1" placeholder="Instructions" required maxlength="200"></textarea><br>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+
+        <div id="bookContainer">
+            <ul id="recipeList">
+            <!-- Recipes will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div id="searchContainer">
+            <form id="SearchForm">
+                <input type="search" name="search" id="Search" placeholder="keywords" /><br>
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+        
+    </div>
+    <footer><footer>
+        <p>© Kostas Lap </p>
+        <p>email: kostaslapouridis@hotmail.com</p>
+        <p>GitHub: <a href="https://github.com/KostasLap">KostasLap</a></p>
+    </footer></footer>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
